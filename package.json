@@ -1,7 +1,15 @@
 {
   "name": "heroku_test",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
   "dependencies": {
+    "@activeadmin/activeadmin": "^2.9.0",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
